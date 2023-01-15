@@ -8,6 +8,10 @@
     "url": "git+https://github.com/browserstack/cucumber-js-browserstack.git"
   },
   "scripts": {
+  "test": "cucumber-js [args]",
+  "browserstack-test": "browserstack-node-sdk cucumber-js [args]"
+},
+  "scripts": {
     "sample-test": "browserstack-node-sdk cucumber-js features/single.feature",
     "sample-local-test": "browserstack-node-sdk cucumber-js features/local.feature"
   },
